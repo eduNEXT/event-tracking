@@ -74,7 +74,7 @@ class Tracker(object):
         """
         event = {
             'name': name or UNKNOWN_EVENT_TYPE,
-            'timestamp': datetime.now(UTC),
+            'time': datetime.now(UTC),
             'data': data or {},
             'context': self.resolve_context()
         }
